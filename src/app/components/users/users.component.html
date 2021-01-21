@@ -1,0 +1,5 @@
+
+<div class="users">
+  <app-user *ngFor="let u of users" [user]="u" (bubbleUp)="bubbleUser($event)"></app-user>
+</div>
+
