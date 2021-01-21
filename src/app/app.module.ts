@@ -2,19 +2,25 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { UsersWithAddressComponent } from './users-with-address/users-with-address.component';
-import { UserComponent } from './user/user.component';
-import { AddressComponent } from './address/address.component';
+import { UsersComponent } from './components/users/users.component';
+import { UserComponent } from './components/users/user/user.component';
+import {HttpClientModule} from '@angular/common/http';
+import { PostsComponent } from './components/posts/posts.component';
+import { PostComponent } from './components/posts/post/post.component';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    UsersWithAddressComponent,
+    UsersComponent,
     UserComponent,
-    AddressComponent
+    PostsComponent,
+    PostComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
