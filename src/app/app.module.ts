@@ -2,19 +2,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { UsersWithAddressComponent } from './users-with-address/users-with-address.component';
-import { UserComponent } from './user/user.component';
-import { AddressComponent } from './address/address.component';
+import { FormComponent } from './form/form.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    UsersWithAddressComponent,
-    UserComponent,
-    AddressComponent
+    FormComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
