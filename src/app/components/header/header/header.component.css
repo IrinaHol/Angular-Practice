@@ -1,0 +1,10 @@
+
+.linkStyle a{
+  width: 50%;
+  margin-right: 10px;
+
+}
+.header {
+  display: flex;
+  justify-content: center;
+}
