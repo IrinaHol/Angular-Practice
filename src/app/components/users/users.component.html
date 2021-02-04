@@ -1,6 +1,6 @@
 
 
-<div>
+<div *ngIf="users">
   <div *ngFor="let user of users | userTransform:'My name is ':' City: '">
     <app-user [user]="user"></app-user>
   </div>
