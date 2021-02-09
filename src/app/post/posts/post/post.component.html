@@ -1,0 +1,7 @@
+<h3>
+  {{post.id}}-{{post.title}}
+</h3>
+
+<div>
+  <button (click)="getPost(post)" [class.hide]="activeValue === post.id">show post body</button>
+</div>
