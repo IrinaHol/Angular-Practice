@@ -1,0 +1,18 @@
+<!--&lt;!&ndash;<form #form (ngSubmit)="submit(form)">&ndash;&gt;-->
+<!--  <form #form="ngForm" (ngSubmit)="submit(form)">-->
+<!--  <input type="text" [(ngModel)]="user.name"-->
+<!--         name="name" minlength="10">-->
+<!--    <div *ngIf="!form.controls.name?.valid">Must have 10 symbol</div>-->
+<!--  <input  type="text" [(ngModel)]="user.age" name="age">-->
+<!--&lt;!&ndash;  <button [disabled]="form.controls.name?.status === 'INVALID'" >Send</button>&ndash;&gt;-->
+<!--    <button >Send</button>-->
+<!--</form>-->
+
+
+<!--Reactive Form-->
+
+<form [formGroup]="myForm" (ngSubmit)="ddd(myForm)">
+  <input [formControl]="name">
+  <input [formControl]="age">
+  <button [disabled]="!myForm.valid">Save</button>
+</form>
